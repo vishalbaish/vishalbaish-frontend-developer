@@ -1,0 +1,41 @@
+.homeWrapper {
+  width: 100%;
+  height: 100vh;
+  background-color: #b6bbc4;
+  position: relative;
+  z-index: 2;
+  .banner {
+    height: 100vh;
+    width: 50%;
+    padding: 2rem 6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+    justify-content: center;
+    text-align: left;
+    .title {
+      font-family: "Playfair Display", serif;
+      font-weight: 800;
+      font-size: 3rem;
+      max-width: 90%;
+    }
+    .description {
+      font-family: "Playfair Display", serif;
+      max-width: 90%;
+      font-weight: 500;
+    }
+  }
+  .rocketImage {
+    position: absolute;
+    z-index: -1;
+    width: 20rem;
+    height: 40rem;
+    transform: rotate(70deg);
+    .rocket {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+}

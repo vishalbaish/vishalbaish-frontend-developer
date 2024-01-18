@@ -1,0 +1,18 @@
+.navWrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3rem;
+  padding: 1rem 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  z-index: 10;
+  background-color: #000;
+  .logo {
+    font-family: "Playfair Display", serif;
+    color: #fff;
+    font-weight: 800;
+  }
+}

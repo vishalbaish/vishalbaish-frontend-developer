@@ -1,0 +1,11 @@
+Model Information:
+* title:	SpaceX Dragon 2 exterior
+* source:	https://sketchfab.com/3d-models/spacex-dragon-2-exterior-2575398db20c406cab2cf72b89a9be8b
+* author:	Forest Katsch (https://sketchfab.com/ForestKatsch)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "SpaceX Dragon 2 exterior" (https://sketchfab.com/3d-models/spacex-dragon-2-exterior-2575398db20c406cab2cf72b89a9be8b) by Forest Katsch (https://sketchfab.com/ForestKatsch) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
