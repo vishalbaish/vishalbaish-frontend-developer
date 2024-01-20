@@ -10,17 +10,16 @@ const Home = () => {
   useEffect(() => {
     gsap.fromTo(
       `#rocket`,
-      { bottom: "-20rem", left: "-10rem" },
+      { bottom: "-40%", left: "-10%" },
       {
-        bottom: "-5rem",
+        bottom: "-5%",
         left: "30%",
         ease: "power2.Out",
         scrollTrigger: {
           trigger: `#home`,
           start: "top top",
           end: "70% top",
-          // pin: true,
-          scrub: 1,
+          scrub: 1.25,
           id: "scrub",
         },
       }

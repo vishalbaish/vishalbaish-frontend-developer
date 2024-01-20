@@ -1,4 +1,4 @@
-import React, { Suspense, useEffect } from "react";
+import React, { Suspense, useContext, useEffect } from "react";
 import styles from "./index.module.scss";
 import { Canvas, useLoader } from "@react-three/fiber";
 import {
@@ -6,11 +6,22 @@ import {
   Environment,
   OrbitControls,
   useAnimations,
+  useProgress,
 } from "@react-three/drei";
 import { Model } from "../Scene";
 import Flag from "../Scene/Flag";
+import { SearchContext } from "../../context/SearchContext/SearchContext";
 
 const Space = () => {
+  const { progress } = useProgress();
+  const { loadingScreen, setLoadingScreen } = useContext(SearchContext);
+
+  useEffect(() => {
+    if (progress == 100 && loadingScreen) {
+      setLoadingScreen(false);
+    }
+  }, [progress]);
+
   return (
     <div className={styles.spaceWrapper}>
       <Canvas
@@ -23,7 +34,7 @@ const Space = () => {
         }}
       >
         <ambientLight intensity={2} />
-        <OrbitControls minDistance={3} maxDistance={10} target={[0, 0, 0]} />
+        <OrbitControls enableZoom={false} target={[0, 0, 0]} />
         <Suspense fallback={null}>
           <group
             scale={[0.9, 0.9, 0.9]}

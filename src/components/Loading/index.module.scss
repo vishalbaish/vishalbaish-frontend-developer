@@ -1,0 +1,29 @@
+.loadingWrapper {
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  position: fixed;
+  z-index: 15;
+  place-content: center;
+  overflow: hidden;
+  background-color: #000;
+  .logo {
+    line-height: 1.6;
+    overflow: hidden;
+    color: #fff;
+    font-size: 4rem;
+    .title {
+      display: flex;
+      align-items: center;
+      transform: translateY(100%);
+      padding: 2rem;
+      font-family: "Playfair Display", serif;
+      .xLetter {
+        opacity: 0;
+        color: #b6bbc4;
+        font-family: "Playfair Display", serif;
+        font-size: 5rem;
+      }
+    }
+  }
+}
