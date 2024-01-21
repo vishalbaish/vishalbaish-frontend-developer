@@ -1,6 +1,7 @@
 .rocketSection {
   width: 100%;
   height: 100vh;
+  height: 100vh;
   position: fixed;
   z-index: 20;
   left: 0;
@@ -32,7 +33,7 @@
   }
   .header {
     display: flex;
-    height: 100vh;
+    height: 100%;
     align-items: center;
     justify-content: center;
     .leftSection {
@@ -61,7 +62,7 @@
           display: flex;
           width: 25%;
           align-items: flex-start;
-          flex-direction: column;
+          flex-direction: column-reverse;
           .itemValue {
             font-size: 2rem;
             display: flex;
@@ -81,8 +82,53 @@
       object-fit: contain;
     }
   }
-  .rocketDetails {
-    height: 100vh;
-    background-color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  .rocketSection {
+    .header {
+      width: 100%;
+      padding: 1.5rem 0;
+      flex-direction: column;
+      justify-content: space-between;
+      .leftSection {
+        width: 100%;
+        margin-bottom: 2rem;
+        height: 100%;
+        gap: unset;
+        justify-content: space-between;
+        .title {
+          font-size: 2rem;
+        }
+        .numericDetails {
+          width: 100%;
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 1rem;
+          margin: 1rem 0;
+          .itemWrapper {
+            flex-direction: row;
+            gap: 2rem;
+            align-items: center;
+            .itemValue {
+              font-size: 1.5rem;
+              display: flex;
+              align-items: center;
+              font-weight: 600;
+              .itemValueInfo {
+                font-size: 0.85rem;
+              }
+            }
+          }
+        }
+        .description {
+          max-width: 100%;
+          font-size: 0.85rem;
+        }
+      }
+      .rocketImg {
+        width: 100%;
+      }
+    }
   }
 }

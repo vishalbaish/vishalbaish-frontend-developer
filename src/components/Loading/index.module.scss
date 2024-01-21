@@ -17,13 +17,21 @@
       align-items: center;
       transform: translateY(100%);
       padding: 2rem;
-      font-family: "Playfair Display", serif;
+      //   font-family: "Playfair Display", serif;
       .xLetter {
         opacity: 0;
         color: #b6bbc4;
         font-family: "Playfair Display", serif;
         font-size: 5rem;
       }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .loadingWrapper {
+    .logo {
+      font-size: 2rem;
     }
   }
 }

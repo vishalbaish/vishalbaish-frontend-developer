@@ -5,3 +5,11 @@
   right: 0;
   top: 0;
 }
+
+@media screen and (max-width: 768px) {
+  .spaceWrapper {
+    width: 100%;
+    height: 50vh;
+    top: 50%;
+  }
+}

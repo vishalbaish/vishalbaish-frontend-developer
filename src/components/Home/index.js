@@ -4,27 +4,47 @@ import Space from "../Space";
 import rocket from "../../assets/rocket.png";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
+import { isMobileDevice } from "../../utils";
 gsap.registerPlugin(ScrollTrigger);
 
 const Home = () => {
   useEffect(() => {
-    gsap.fromTo(
-      `#rocket`,
-      { bottom: "-40%", left: "-10%" },
-      {
-        bottom: "-5%",
-        left: "30%",
-        ease: "power2.Out",
-        scrollTrigger: {
-          trigger: `#home`,
-          start: "top top",
-          end: "70% top",
-          scrub: 1.25,
-          id: "scrub",
-        },
-      }
-    );
-  }, []);
+    if (isMobileDevice) {
+      gsap.fromTo(
+        `#rocket`,
+        { bottom: "-20%", left: "-30%" },
+        {
+          bottom: "5%",
+          left: "0%",
+          ease: "power2.Out",
+          scrollTrigger: {
+            trigger: `#home`,
+            start: "50% top",
+            end: "120% top",
+            scrub: 1.25,
+            id: "scrub",
+          },
+        }
+      );
+    } else {
+      gsap.fromTo(
+        `#rocket`,
+        { bottom: "-40%", left: "-10%" },
+        {
+          bottom: "-5%",
+          left: "30%",
+          ease: "power2.Out",
+          scrollTrigger: {
+            trigger: `#home`,
+            start: "top top",
+            end: "70% top",
+            scrub: 1.25,
+            id: "scrub",
+          },
+        }
+      );
+    }
+  }, [isMobileDevice]);
 
   return (
     <div id="home" className={styles.homeWrapper}>

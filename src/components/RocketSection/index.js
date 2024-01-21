@@ -26,8 +26,11 @@ const RocketNumericInfo = [
 
 const RocketSection = ({ selectedRocket, setSelectedRocket }) => {
   const handleClose = () => {
+    document.body.style.overflow = "auto";
     setSelectedRocket(null);
   };
+
+  console.log(selectedRocket);
 
   useEffect(() => {
     gsap.fromTo(
@@ -65,13 +68,13 @@ const RocketSection = ({ selectedRocket, setSelectedRocket }) => {
             {RocketNumericInfo.map((item) => {
               return (
                 <div className={styles.itemWrapper}>
+                  <div className={styles.itemName}>{item.name}</div>
                   <div className={styles.itemValue}>
                     {selectedRocket[item.id][item.value]}
                     <div
                       className={styles.itemValueInfo}
                     >{`(${item.itemValue})`}</div>
                   </div>
-                  <div className={styles.itemName}>{item.name}</div>
                 </div>
               );
             })}
@@ -83,7 +86,6 @@ const RocketSection = ({ selectedRocket, setSelectedRocket }) => {
           className={styles.rocketImg}
         />
       </div>
-      <div className={styles.rocketDetails}></div>
     </div>
   );
 };

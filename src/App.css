@@ -47,11 +47,20 @@
 }
 
 * {
+  padding: 0;
+  margin: 0;
+}
+
+* {
   box-sizing: border-box;
 }
 
 .App-link {
   color: #61dafb;
+}
+
+* {
+  font-family: "Red Hat Display", sans-serif;
 }
 
 @keyframes App-logo-spin {

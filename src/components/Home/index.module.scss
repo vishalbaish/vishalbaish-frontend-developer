@@ -3,6 +3,9 @@
   height: 100vh;
   background-color: #b6bbc4;
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   z-index: 2;
   .banner {
     height: 100vh;
@@ -21,7 +24,6 @@
       max-width: 90%;
     }
     .description {
-      font-family: "Playfair Display", serif;
       max-width: 90%;
       font-weight: 500;
     }
@@ -36,6 +38,31 @@
       width: 100%;
       height: 100%;
       object-fit: contain;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .homeWrapper {
+    align-items: flex-start;
+    .banner {
+      padding: 2rem;
+      padding-top: 6rem;
+      height: 50vh;
+      text-align: center;
+      width: 100%;
+      flex-direction: column;
+      .title {
+        font-size: 1.5rem;
+      }
+      .description {
+        font-size: 0.85rem;
+      }
+    }
+    .rocketImage {
+      width: 10rem;
+      height: 15rem;
+      transform: rotate(45deg);
     }
   }
 }
