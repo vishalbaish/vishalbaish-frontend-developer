@@ -84,6 +84,23 @@
   }
 }
 
+@media screen and (max-width: 1200px) {
+  .rocketSection {
+    .header {
+      .leftSection {
+        .numericDetails {
+          width: 100%;
+          .itemWrapper {
+            .itemValue {
+              font-size: 1.5rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 768px) {
   .rocketSection {
     .header {

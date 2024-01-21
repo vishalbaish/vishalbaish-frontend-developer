@@ -42,6 +42,24 @@
   }
 }
 
+@media screen and (max-width: 1200px) {
+  .homeWrapper {
+    .banner {
+      .title {
+        font-size: 2rem;
+      }
+      .description {
+        font-size: 0.9rem;
+      }
+    }
+    .rocketImage {
+      width: 15rem;
+      height: 30rem;
+      transform: rotate(60deg);
+    }
+  }
+}
+
 @media screen and (max-width: 768px) {
   .homeWrapper {
     align-items: flex-start;

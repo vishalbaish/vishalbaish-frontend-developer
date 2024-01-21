@@ -100,6 +100,18 @@
   }
 }
 
+@media screen and (max-width: 1200px) {
+  .listSectionWrapper {
+    .listGridWrapper {
+      .listGrid {
+        .rocketBox {
+          width: 17rem;
+        }
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 768px) {
   .listSectionWrapper {
     padding: 2rem 3rem;

@@ -30,8 +30,6 @@ const RocketSection = ({ selectedRocket, setSelectedRocket }) => {
     setSelectedRocket(null);
   };
 
-  console.log(selectedRocket);
-
   useEffect(() => {
     gsap.fromTo(
       `.${styles.rocketImg}`,

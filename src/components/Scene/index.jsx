@@ -15,7 +15,6 @@ export function Model(props) {
   const { nodes, materials } = useGLTF("/scene.gltf");
   const marsRef = useRef(null);
   useFrame(({ clock }) => {
-    // coneRef.current.rotation.x = clock.getElapsedTime();
     marsRef.current.rotation.y = clock.getElapsedTime() / 15;
   });
   return (
