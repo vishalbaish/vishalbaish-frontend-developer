@@ -32,6 +32,11 @@
   .loadingWrapper {
     .logo {
       font-size: 2rem;
+      .title {
+        .xLetter {
+          font-size: 3rem;
+        }
+      }
     }
   }
 }
